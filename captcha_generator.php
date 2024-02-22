@@ -76,7 +76,7 @@ $img->noise_color      = new Securimage_Color("#0f509d");
 // set namespace if supplied to script via HTTP GET
 if (!empty($_GET['namespace'])) $img->setNamespace($_GET['namespace']);
 
-for ($i = 1; $i <= 10; $i++) {
+for ($i = 1; $i <= 10000; $i++) {
   echo $i . "\n";
   $img->show();
   $path = 'images/' . $img->getCode(true)['display'] . '.png';
